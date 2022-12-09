@@ -5,11 +5,10 @@ import java.util.Scanner;
 public class LoanCalculator {
 
     /**
-     * TODO: finish out this JavaDoc comment block.
-     * FIXME: WHAT DOES THIS METHOD DO?
+     * A calculator to know how much is left to pay after have paid 3 months of a loan
      * 
-     * @param ???
-     * @return ???
+     * @param amount The initial amount of the loan
+     * @return The amount left after 3 month of payments
      */
     static int getRemainingAmountIn3Months(int amount) {
         int result = amount;
