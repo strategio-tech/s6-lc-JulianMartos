@@ -12,14 +12,18 @@ public class LoanCalculator {
      * @return ???
      */
     static int getRemainingAmountIn3Months(int amount) {
-        // TODO: Rewrite this method
-        return -1;
+        int result = amount;
+        for (int i = 0; i < 3; i++) {
+            result = result - (int)(result * 0.1);
+        }
+        return result;
+//        return (int)(0.729*amount);
     }
 
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             int amount = scanner.nextInt();
-            System.out.println(getRemainingAmountIn3Months(amount));
+             System.out.println(getRemainingAmountIn3Months(amount));
         }
     }
 }
